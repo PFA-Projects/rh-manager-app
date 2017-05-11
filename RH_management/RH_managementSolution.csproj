@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79DE0F1B-A471-46E4-91E5-145DBEFFDF23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RH_managementSolution</RootNamespace>
+    <AssemblyName>RH_managementSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GwinApp, Version=0.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Gwin Library\GwinApp.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Gwin Library\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAL\BaseBLO.cs" />
+    <Compile Include="BAL\Security\RoleBAO.cs" />
+    <Compile Include="BAL\UserBLO.cs" />
+    <Compile Include="DAL\LovalDB.cs" />
+    <Compile Include="DAL\Configuration.cs" />
+    <Compile Include="DAL\ModelContext.cs" />
+    <Compile Include="Entities\Absenteeism.cs" />
+    <Compile Include="Entities\Leave.cs" />
+    <Compile Include="Entities\LeaveCategory.cs" />
+    <Compile Include="Entities\Ressources\Absenteeism\Abseteeism.ar.Designer.cs">
+      <DependentUpon>Abseteeism.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\Absenteeism\Abseteeism.fr.Designer.cs">
+      <DependentUpon>Abseteeism.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\Absenteeism\Abseteeism.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Abseteeism.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\LeaveCategory\LeaveCategory.ar.Designer.cs">
+      <DependentUpon>LeaveCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\LeaveCategory\LeaveCategory.fr.Designer.cs">
+      <DependentUpon>LeaveCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\LeaveCategory\LeaveCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveCategory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\Leave\Leave.ar.Designer.cs">
+      <DependentUpon>Leave.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\Leave\Leave.fr.Designer.cs">
+      <DependentUpon>Leave.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\Leave\Leave.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Leave.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffCategory\StaffCategory.ar.Designer.cs">
+      <DependentUpon>StaffCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffCategory\StaffCategory.fr.Designer.cs">
+      <DependentUpon>StaffCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffCategory\StaffCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffCategory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffGrade\StaffGrade.fr.Designer.cs">
+      <DependentUpon>StaffGrade.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffGrade\StaffGrade.ar.Designer.cs">
+      <DependentUpon>StaffGrade.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffGrade\StaffGrade.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffGrade.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.ar.Designer.cs">
+      <DependentUpon>StaffSpecialty.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.fr.Designer.cs">
+      <DependentUpon>StaffSpecialty.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffSpecialty.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Ressources\Staff\Staff.ar.Designer.cs" />
+    <Compile Include="Entities\Ressources\Staff\Staff.Designer.cs" />
+    <Compile Include="Entities\Ressources\Staff\Staff.fr.Designer.cs" />
+    <Compile Include="Entities\Staff.cs" />
+    <Compile Include="Entities\StaffCategory.cs" />
+    <Compile Include="Entities\StaffGrade.cs" />
+    <Compile Include="Entities\StaffSpecialty.cs" />
+    <Compile Include="FormMenuApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuApplication.Designer.cs">
+      <DependentUpon>FormMenuApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entities\Ressources\Absenteeism\Abseteeism.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Abseteeism.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Absenteeism\Abseteeism.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Abseteeism.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Absenteeism\Abseteeism.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Abseteeism.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\LeaveCategory\LeaveCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LeaveCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\LeaveCategory\LeaveCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LeaveCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\LeaveCategory\LeaveCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LeaveCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Leave\Leave.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Leave.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Leave\Leave.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Leave.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Leave\Leave.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Leave.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffCategory\StaffCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffCategory\StaffCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffCategory\StaffCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffGrade\StaffGrade.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffGrade.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffGrade\StaffGrade.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffGrade.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffGrade\StaffGrade.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffGrade.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffSpecialty.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffSpecialty.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\StaffSpecialty\StaffSpecialty.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StaffSpecialty.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Ressources\Staff\Staff.ar.resx" />
+    <EmbeddedResource Include="Entities\Ressources\Staff\Staff.fr.resx" />
+    <EmbeddedResource Include="Entities\Ressources\Staff\Staff.resx" />
+    <EmbeddedResource Include="FormMenuApplication.ar.resx">
+      <DependentUpon>FormMenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuApplication.resx">
+      <DependentUpon>FormMenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
