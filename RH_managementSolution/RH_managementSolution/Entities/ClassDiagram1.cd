@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RH_managementSolution.Entities.Absenteeism">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Absenteeism.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="staff" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.Leave">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Leave.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="leaveAsk" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.LeaveAsk">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entities\LeaveAsk.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="leaveCategory" />
+      <Property Name="staff" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.LeaveCategory">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LeaveCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.Staff">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAEgAAAAQCQAAAIAAABBAQAIAAAAAAg=</HashCode>
+      <FileName>Entities\Staff.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="grade" />
+      <Property Name="category" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="leaves" />
+      <Property Name="specialties" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.StaffCategory">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\StaffCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.StaffGrade">
+    <Position X="1" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\StaffGrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RH_managementSolution.Entities.StaffSpecialty">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAACAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Entities\StaffSpecialty.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Staffs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
