@@ -121,12 +121,12 @@
     <value>شرح الصنف</value>
   </data>
   <data name="NameOfStaffCategory" xml:space="preserve">
-    <value>اسم صنف الذي ينتمي اليه الموظف</value>
+    <value>اسم صنف</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>صنف الموظف</value>
+    <value>اصناف الموظف</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>اصناف الموظف</value>
+    <value>صنف الموظف</value>
   </data>
 </root>

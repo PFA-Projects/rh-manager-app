@@ -24,7 +24,7 @@
 
         protected override void Seed(ModelContext context)
         {
-            
+
             //-- Gwin Application Name
             context.ApplicationNames.AddOrUpdate(
                            r => r.Reference
@@ -112,7 +112,27 @@
                          new MenuItemApplication { Id = 1, Code = "Configuration", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "إعدادات", English = "Configuration", French = "Configuration" } },
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } }
+                         //new MenuItemApplication { Id = 4, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير معلومات الموظفين", English = "Staff information management", French = "Gestion des informations des personnels" } },
+                         //new MenuItemApplication { Id = 5, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدابير", English = "Managements", French = "Gestions" } }
                        );
+
+            context.LeaveCategories.AddOrUpdate(r => r.Id,
+                new LeaveCategory
+                {
+                    NameOfLeaveCategory = new LocalizedString { Arab = "اجازة ادارية", English = "Administrative leave", French = "Congé administratif" },
+                    Description = new LocalizedString() { Arab = " شرح الاجازة الادارية", English = "description of Administrative leave", French = "descriptin du Congé administratif" }
+                },
+                new LeaveCategory
+                {
+                    NameOfLeaveCategory = new LocalizedString { Arab = "اجازة خاصة", English = "Exceptional leave", French = "Congé exceptionnel" },
+                    Description = new LocalizedString() { Arab = " شرح الاجازة الخاصة", English = "description of Exceptional leave", French = "descriptin du Congé exceptionnel" }
+                },
+                new LeaveCategory
+                {
+                    NameOfLeaveCategory = new LocalizedString { Arab = "اجازة مرضية", English = "Sickness leave", French = "Congé de maladie" },
+                    Description = new LocalizedString() { Arab = " شرح الاجازة المرضية", English = "description of Sickness leave", French = "descriptin du Congé de maladie" }
+                }
+                );
             // 
             // admin to StaffAutorization
             //

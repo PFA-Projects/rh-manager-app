@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true, DisplayMember = "reason")]
-    [Menu(Group = "managements")]
-    public class LeaveAsk:BaseEntity
+    [GwinEntity(Localizable = true, DisplayMember = "startDate")]
+    [Menu(Group = "Configuration")]
+    public class LeaveAsk : BaseEntity
     {
         [EntryForm]
         [DataGrid]
         [Filter]
+        [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
         public LeaveCategory leaveCategory { get; set; }
 
         [EntryForm]
@@ -22,10 +23,15 @@ namespace RH_managementSolution.Entities
         [Filter]
         public Staff staff { get; set; }
 
-        //[EntryForm]
-        //[DataGrid]
-        //[Filter]
-        //public int countDays { get; set; }
+        [EntryForm]
+        [DataGrid]
+        [Filter]
+        public DateTime startDate { get; set; }
+
+        [EntryForm]
+        [DataGrid]
+        [Filter]
+        public DateTime endDate { get; set; }
 
     }
 }

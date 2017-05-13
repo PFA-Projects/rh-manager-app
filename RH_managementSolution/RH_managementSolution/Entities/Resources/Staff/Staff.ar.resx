@@ -123,11 +123,17 @@
   <data name="BirthDate" xml:space="preserve">
     <value>تاريخ الازدياد</value>
   </data>
+  <data name="category" xml:space="preserve">
+    <value>الصنف</value>
+  </data>
   <data name="Departement" xml:space="preserve">
     <value>قسم العمل</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>الاسم </value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>الرتبة</value>
   </data>
   <data name="InvolvementDate" xml:space="preserve">
     <value>تاريخ الالتحاق</value>
@@ -146,5 +152,8 @@
   </data>
   <data name="SingularName" xml:space="preserve">
     <value>الموظف</value>
+  </data>
+  <data name="specialties" xml:space="preserve">
+    <value>التخصصات</value>
   </data>
 </root>

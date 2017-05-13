@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(DisplayMember = "FirstName" + " " + "LastName", Localizable = true)]
-    [Menu(Group = "Information")]
+    [Menu(Group = "Staff information management")]
 
     public class Staff : BaseEntity
     {
@@ -60,6 +60,7 @@ namespace RH_managementSolution.Entities
 
         //done
         [EntryForm]
+        [Filter]
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public StaffGrade grade { get; set; }
 
@@ -75,13 +76,13 @@ namespace RH_managementSolution.Entities
         [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public StaffCategory category { get; set; }
 
-        //done
-        [EntryForm]
-        [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
-        public List<Absenteeism> absences { get; set; }
+        ////done
+        //[EntryForm]
+        //[Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
+        //public List<Absenteeism> absences { get; set; }
 
-        [EntryForm]
-        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
-        public List<Leave> leaves { get; set; }
+        //[EntryForm]
+        //[Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        //public List<Leave> leaves { get; set; }
     }
 }

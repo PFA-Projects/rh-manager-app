@@ -147,4 +147,13 @@
   <data name="SingularName" xml:space="preserve">
     <value>Staff</value>
   </data>
+  <data name="category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="specialties" xml:space="preserve">
+    <value>Specialties</value>
+  </data>
 </root>

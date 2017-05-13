@@ -124,9 +124,9 @@
     <value>Number of grade</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Grade</value>
+    <value>Grades</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Grades</value>
+    <value>Grade</value>
   </data>
 </root>

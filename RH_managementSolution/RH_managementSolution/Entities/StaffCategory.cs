@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(DisplayMember = "NameOfStaffCategory", Localizable = true)]
-    [Menu(Group = "managements")]
+    [Menu(Group = "Configuration")]
     public class StaffCategory : BaseEntity
     {
 
@@ -24,8 +24,8 @@ namespace RH_managementSolution.Entities
         [Filter]
         public LocalizedString NameOfStaffCategory { get; set; }
 
-        [EntryForm]
-        [DataGrid]
+        [EntryForm(WidthControl = 500)]
+        [DataGrid(WidthColonne =500)]
         public LocalizedString Description { get; set; }
 
         //[EntryForm]

@@ -123,11 +123,17 @@
   <data name="BirthDate" xml:space="preserve">
     <value>Date de naissance</value>
   </data>
+  <data name="category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
   <data name="Departement" xml:space="preserve">
     <value>Département</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Prénom</value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>Grade</value>
   </data>
   <data name="InvolvementDate" xml:space="preserve">
     <value>Date de prise de service</value>
@@ -146,5 +152,8 @@
   </data>
   <data name="SingularName" xml:space="preserve">
     <value>Personnels</value>
+  </data>
+  <data name="specialties" xml:space="preserve">
+    <value>Spécialités</value>
   </data>
 </root>

@@ -9,24 +9,19 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true,DisplayMember ="reason")]
-    [Menu(Group = "managements")]
+    [GwinEntity(Localizable = true,DisplayMember ="authorized")]
+    [Menu(Group = "Configuration")]
     public class Absenteeism:BaseEntity
     {
-        public Absenteeism()
-        {
-            this.reason = new LocalizedString();
-        }
+
         [EntryForm]
         [DataGrid]
         public bool authorized { get; set; }
+        
 
         [EntryForm]
         [DataGrid]
-        public LocalizedString reason { get; set; }
-
-        [EntryForm]
-        [DataGrid]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Staff staff { get; set; }
     }
 }

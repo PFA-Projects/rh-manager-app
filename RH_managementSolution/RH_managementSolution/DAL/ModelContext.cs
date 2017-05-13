@@ -44,6 +44,7 @@
         public virtual DbSet<Leave> Leaves { get; set; }
         public virtual DbSet<LeaveCategory> LeaveCategories { get; set; }
         public virtual DbSet<Absenteeism> Absenteeisms { get; set; }
+        public virtual DbSet<LeaveAsk> LeaveAsks { get; set; }
 
 
         // Ajoutez un DbSet pour chaque type d'entité à inclure dans votre modèle. Pour plus d'informations 

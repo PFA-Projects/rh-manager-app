@@ -9,11 +9,19 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true,DisplayMember = "Reference")]
-    [Menu(Group = "managements")]
-    public class Leave:BaseEntity
+    [GwinEntity(Localizable = true, DisplayMember = "Reference")]
+    [Menu(Group = "Configuration")]
+    public class Leave : BaseEntity
     {
+        [EntryForm(Ordre = 2)]
+        [DataGrid]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        public LeaveAsk leaveAsk { get; set; }
 
-       public LeaveAsk leaveAsk { get; set; }
+        [Filter]
+        [EntryForm (Ordre =1)]
+        [DataGrid]
+        [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+        public Staff staff { get; set; }
     }
 }

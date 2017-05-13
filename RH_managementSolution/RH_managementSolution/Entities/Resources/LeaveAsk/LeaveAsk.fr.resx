@@ -117,16 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="leaveAsk" xml:space="preserve">
-    <value>طلب الاجازة</value>
+  <data name="endDate" xml:space="preserve">
+    <value>Date de fin</value>
+  </data>
+  <data name="leaveCategory" xml:space="preserve">
+    <value>Type de congé</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>الاجازات</value>
+    <value>Demandes de congé</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>الاجازة</value>
+    <value>Demande de congé</value>
   </data>
   <data name="staff" xml:space="preserve">
-    <value>الموظف</value>
+    <value>Personnel</value>
+  </data>
+  <data name="startDate" xml:space="preserve">
+    <value>Date de début</value>
   </data>
 </root>

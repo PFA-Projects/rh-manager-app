@@ -124,9 +124,9 @@
     <value>Name of staff category</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Staff Category</value>
+    <value>Staff Categories</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Staff Categories</value>
+    <value>Staff Category</value>
   </data>
 </root>

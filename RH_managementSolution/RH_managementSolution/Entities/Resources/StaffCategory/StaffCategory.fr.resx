@@ -124,9 +124,9 @@
     <value>Nom du catégorie du personnel</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Catégorie du personnel</value>
+    <value>Catégories du personnels</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Les catégories du personels</value>
+    <value>Catégorie du personel</value>
   </data>
 </root>
