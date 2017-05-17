@@ -111,12 +111,14 @@
                          ,
                          new MenuItemApplication { Id = 1, Code = "Configuration", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "إعدادات", English = "Configuration", French = "Configuration" } },
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
-                         new MenuItemApplication { Id = 3, Code = "Root", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } }
-                         //new MenuItemApplication { Id = 4, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير معلومات الموظفين", English = "Staff information management", French = "Gestion des informations des personnels" } },
-                         //new MenuItemApplication { Id = 5, Code = "Admin", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدابير", English = "Managements", French = "Gestions" } }
-                       );
+                         new MenuItemApplication { Id = 3, Code = "Root", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } },
+                         new MenuItemApplication { Id = 4, Code = "AbseenteismManagement", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الغياب", English = "Absenteeism Management", French = "Gestion d'Absentéisme" } },
+                         new MenuItemApplication { Id = 5, Code = "LeaveManagement", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الاجازات", English = "Leave Management", French = "Gestion des congés" } },
+                         new MenuItemApplication { Id = 6, Code = "Staff", Title = new App.Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير الموظفين", English = "Staff Management", French = "Gestion des personnels" } }
 
-            context.LeaveCategories.AddOrUpdate(r => r.Id,
+                         );
+
+            context.LeaveCategories.AddOrUpdate(r => r.Reference,
                 new LeaveCategory
                 {
                     NameOfLeaveCategory = new LocalizedString { Arab = "اجازة ادارية", English = "Administrative leave", French = "Congé administratif" },
@@ -147,10 +149,28 @@
             RoleAdmin.Authorizations.Add(AbsenteeismAutorization);
             context.SaveChanges();
 
+            //AdvancementGradesAutorization
+            Authorization AdvancementGrades = new Authorization();
+            AdvancementGrades.BusinessEntity = typeof(Absenteeism).FullName;
+            RoleAdmin.Authorizations.Add(AdvancementGrades);
+            context.SaveChanges();
+
+            //DepartementAutorization
+            Authorization DepartementAutorization = new Authorization();
+            DepartementAutorization.BusinessEntity = typeof(Departement).FullName;
+            RoleAdmin.Authorizations.Add(DepartementAutorization);
+            context.SaveChanges();
+
             //LeaveAutorization
             Authorization LeaveAutorization = new Authorization();
             LeaveAutorization.BusinessEntity = typeof(Leave).FullName;
             RoleAdmin.Authorizations.Add(LeaveAutorization);
+            context.SaveChanges();
+
+            //LeaveAsk Autorization
+            Authorization LeaveAskAutorization = new Authorization();
+            LeaveAskAutorization.BusinessEntity = typeof(LeaveAsk).FullName;
+            RoleAdmin.Authorizations.Add(LeaveAskAutorization);
             context.SaveChanges();
 
             //LeaveCategory Autorization
@@ -167,7 +187,7 @@
 
             //StaffCateoryAutorization
             Authorization StaffCateoryAutorization = new Authorization();
-            StaffCateoryAutorization.BusinessEntity = typeof(StaffCategory).FullName;
+            StaffCateoryAutorization.BusinessEntity = typeof(StaffFunction).FullName;
             RoleAdmin.Authorizations.Add(StaffCateoryAutorization);
             context.SaveChanges();
 

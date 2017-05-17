@@ -10,18 +10,30 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(Localizable = true,DisplayMember ="authorized")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "AbseenteismManagement")]
     public class Absenteeism:BaseEntity
     {
 
-        [EntryForm]
+        [EntryForm(isRequired =true,GroupeBox = "Authorization")]
         [DataGrid]
         public bool authorized { get; set; }
         
 
-        [EntryForm]
+        [EntryForm(isRequired =true, GroupeBox = "Staffs")]
         [DataGrid]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
+
+        [Filter(isValeurFiltreVide=true)]
         public Staff staff { get; set; }
+
+
+        [EntryForm(isRequired = true,GroupeBox ="Dates")]
+        [DataGrid]
+        public DateTime startDate { get; set; }
+
+        
+        [EntryForm(isRequired = true, GroupeBox = "Dates")]
+        [DataGrid]
+        public DateTime endDate { get; set; }
     }
 }

@@ -8,27 +8,28 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true, DisplayMember = "startDate")]
-    [Menu(Group = "Configuration")]
+    [GwinEntity(Localizable = true, DisplayMember = "Description")]
+    [Menu(Group = "LeaveManagement")]
     public class LeaveAsk : BaseEntity
     {
-        [EntryForm]
+        [EntryForm(GroupeBox = "leaveCategory",isRequired =true)]
         [DataGrid]
-        [Filter]
-        [Relationship(Relation = RelationshipAttribute.Relations.OneToMany)]
+        [Filter(isValeurFiltreVide = true)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public LeaveCategory leaveCategory { get; set; }
 
-        [EntryForm]
+        [EntryForm(GroupeBox = "staff", isRequired =true)]
         [DataGrid]
-        [Filter]
+        [Filter(isValeurFiltreVide = true)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public Staff staff { get; set; }
 
-        [EntryForm]
+        [EntryForm(GroupeBox = "Dates",isRequired =true)]
         [DataGrid]
         [Filter]
         public DateTime startDate { get; set; }
 
-        [EntryForm]
+        [EntryForm(GroupeBox = "Dates",isRequired =true)]
         [DataGrid]
         [Filter]
         public DateTime endDate { get; set; }

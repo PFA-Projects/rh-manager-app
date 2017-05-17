@@ -117,28 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="authorized" xml:space="preserve">
-    <value>Authorized</value>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Fonctions" xml:space="preserve">
+    <value>Fonctions</value>
+  </data>
+  <data name="NameOfStaffCategory" xml:space="preserve">
+    <value> Fonction du personnel</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Absenteeism</value>
+    <value>Fontions des personnels</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Absenteeisms</value>
-  </data>
-  <data name="Authorization" xml:space="preserve">
-    <value>Authorization</value>
-  </data>
-  <data name="Dates" xml:space="preserve">
-    <value>Dates</value>
-  </data>
-  <data name="Staffs" xml:space="preserve">
-    <value>Staff</value>
-  </data>
-  <data name="endDate" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="startDate" xml:space="preserve">
-    <value>From</value>
+    <value>Fontion du personel</value>
   </data>
 </root>

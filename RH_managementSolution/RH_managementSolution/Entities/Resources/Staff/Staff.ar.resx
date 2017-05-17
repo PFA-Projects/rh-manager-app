@@ -126,7 +126,7 @@
   <data name="category" xml:space="preserve">
     <value>الصنف</value>
   </data>
-  <data name="Departement" xml:space="preserve">
+  <data name="departement" xml:space="preserve">
     <value>قسم العمل</value>
   </data>
   <data name="FirstName" xml:space="preserve">
@@ -154,6 +154,27 @@
     <value>الموظف</value>
   </data>
   <data name="specialties" xml:space="preserve">
+    <value>التخصصات</value>
+  </data>
+  <data name="Deepartement" xml:space="preserve">
+    <value>قسم العمل</value>
+  </data>
+  <data name="EtatCivil" xml:space="preserve">
+    <value>المعلوملت الشخصية</value>
+  </data>
+  <data name="Fonction" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="Function" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="Graade" xml:space="preserve">
+    <value>الرتبة</value>
+  </data>
+  <data name="Recruitement" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="Spécialités" xml:space="preserve">
     <value>التخصصات</value>
   </data>
 </root>

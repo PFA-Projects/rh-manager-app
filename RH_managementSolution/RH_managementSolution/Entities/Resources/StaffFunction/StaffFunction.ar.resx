@@ -118,15 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description" xml:space="preserve">
-    <value>شرح الصنف</value>
+    <value>شرح الوظيفة</value>
+  </data>
+  <data name="Fonctions" xml:space="preserve">
+    <value>الوظائف</value>
   </data>
   <data name="NameOfStaffCategory" xml:space="preserve">
-    <value>اسم صنف</value>
+    <value>اسم الوظيفة</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>اصناف الموظف</value>
+    <value>وظائف الموظف</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>صنف الموظف</value>
+    <value>وظيفة الموظف</value>
   </data>
 </root>

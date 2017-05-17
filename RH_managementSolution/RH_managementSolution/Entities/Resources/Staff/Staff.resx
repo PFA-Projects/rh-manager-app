@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Address" xml:space="preserve">
+  <data name="address" xml:space="preserve">
     <value>Address</value>
   </data>
   <data name="BirthDate" xml:space="preserve">
@@ -154,6 +154,27 @@
     <value>Grade</value>
   </data>
   <data name="specialties" xml:space="preserve">
+    <value>Specialties</value>
+  </data>
+  <data name="Deepartement" xml:space="preserve">
+    <value>Departement</value>
+  </data>
+  <data name="EtatCivil" xml:space="preserve">
+    <value>Civil State</value>
+  </data>
+  <data name="Fonction" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="Function" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="Graade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="Recruitement" xml:space="preserve">
+    <value>Recruitement</value>
+  </data>
+  <data name="Spécialités" xml:space="preserve">
     <value>Specialties</value>
   </data>
 </root>

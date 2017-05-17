@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(DisplayMember = "NameOfSpecialty", Localizable = true)]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "Staff")]
     public class StaffSpecialty : BaseEntity
     {
         public StaffSpecialty()
@@ -18,12 +18,12 @@ namespace RH_managementSolution.Entities
             this.Description = new LocalizedString();
             this.NameOfStaffSpecialty = new LocalizedString();
         }
-        [EntryForm]
+        [EntryForm(GroupeBox ="Specialty",isRequired =true)]
         [DataGrid]
         [Filter]
         public LocalizedString NameOfStaffSpecialty { get; set; }
 
-        [EntryForm(WidthControl = 500)]
+        [EntryForm(WidthControl = 500, MultiLine = true, NumberLine = 5, GroupeBox = "Specialty")]
         [DataGrid(WidthColonne = 500)]
         public LocalizedString Description { get; set; }
 

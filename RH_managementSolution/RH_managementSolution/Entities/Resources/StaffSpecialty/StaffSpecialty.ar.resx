@@ -129,4 +129,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>التخصص</value>
   </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>التخصصات</value>
+  </data>
 </root>

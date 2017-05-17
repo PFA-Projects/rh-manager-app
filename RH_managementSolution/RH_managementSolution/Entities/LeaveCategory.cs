@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(DisplayMember = "NameOfLeaveCategory", Localizable = true)]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "LeaveManagement")]
     public class LeaveCategory:BaseEntity
     {
         public LeaveCategory()
@@ -19,12 +19,12 @@ namespace RH_managementSolution.Entities
             this.NameOfLeaveCategory = new LocalizedString();
         }
 
-        [EntryForm]
+        [EntryForm(GroupeBox ="LeaveCategory",isRequired =true)]
         [DataGrid]
         [Filter]
         public LocalizedString NameOfLeaveCategory { get; set; }
 
-        [EntryForm(WidthControl =500)]
+        [EntryForm(MultiLine = true, NumberLine = 5,WidthControl =500, GroupeBox = "LeaveCategory")]
         [DataGrid]
         public LocalizedString Description { get; set; }
     }

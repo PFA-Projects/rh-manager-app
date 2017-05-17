@@ -61,7 +61,16 @@ namespace RH_managementSolution.Entities.Resources.LeaveAsk {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Ending Date.
+        ///   Recherche une chaîne localisée semblable à Dates.
+        /// </summary>
+        internal static string Dates {
+            get {
+                return ResourceManager.GetString("Dates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à To.
         /// </summary>
         internal static string endDate {
             get {
@@ -106,7 +115,7 @@ namespace RH_managementSolution.Entities.Resources.LeaveAsk {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Starting Date.
+        ///   Recherche une chaîne localisée semblable à From.
         /// </summary>
         internal static string startDate {
             get {

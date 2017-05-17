@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(DisplayMember = "NumberOfGrade", Localizable = true)]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "Staff")]
     public class StaffGrade : BaseEntity
     {
         public StaffGrade()
@@ -19,12 +19,12 @@ namespace RH_managementSolution.Entities
             this.NumberOfGrade = new LocalizedString();
         }
 
-        [EntryForm]
+        [EntryForm(GroupeBox ="Grades",isRequired =true)]
         [DataGrid]
         [Filter]
         public LocalizedString NumberOfGrade { get; set; }
 
-        [EntryForm(WidthControl = 500)]
+        [EntryForm(WidthControl = 500, MultiLine = true, NumberLine = 5, GroupeBox = "Grades")]
         [DataGrid(WidthColonne = 500)]
         public LocalizedString Description { get; set; }
 
