@@ -38,13 +38,15 @@
 
         // RH_management System
         public virtual DbSet<Staff> Staffs { get; set; }
-        public virtual DbSet<StaffCategory> StaffCategories { get; set; }
+        public virtual DbSet<StaffFunction> StaffFunctions { get; set; }
         public virtual DbSet<StaffGrade> StaffGrades { get; set; }
         public virtual DbSet<StaffSpecialty> StaffSpecialties { get; set; }
         public virtual DbSet<Leave> Leaves { get; set; }
         public virtual DbSet<LeaveCategory> LeaveCategories { get; set; }
         public virtual DbSet<Absenteeism> Absenteeisms { get; set; }
         public virtual DbSet<LeaveAsk> LeaveAsks { get; set; }
+        public virtual DbSet<Departement> Departement { get; set; }
+        public virtual DbSet<AdvancementGrade> AdvancementGrades { get; set; }
 
 
         // Ajoutez un DbSet pour chaque type d'entité à inclure dans votre modèle. Pour plus d'informations 

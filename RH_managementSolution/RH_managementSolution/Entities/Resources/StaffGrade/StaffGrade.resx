@@ -120,6 +120,9 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="Grades" xml:space="preserve">
+    <value>Grades</value>
+  </data>
   <data name="NumberOfGrade" xml:space="preserve">
     <value>Number of grade</value>
   </data>

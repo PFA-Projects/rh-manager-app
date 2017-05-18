@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="endDate" xml:space="preserve">
-    <value>تاريخ نهاية الاجازة</value>
+    <value>الى</value>
   </data>
   <data name="leaveCategory" xml:space="preserve">
     <value>صنف الاجازة</value>
@@ -133,6 +133,9 @@
     <value>الموظف</value>
   </data>
   <data name="startDate" xml:space="preserve">
-    <value>تاريخ نهاية الاجازة</value>
+    <value>من</value>
+  </data>
+  <data name="Dates" xml:space="preserve">
+    <value>تواريخ</value>
   </data>
 </root>

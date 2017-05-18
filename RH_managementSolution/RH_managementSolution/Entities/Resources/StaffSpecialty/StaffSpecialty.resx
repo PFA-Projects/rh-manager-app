@@ -129,4 +129,7 @@
   <data name="SingularName" xml:space="preserve">
     <value>Spécialité</value>
   </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>Specialties</value>
+  </data>
 </root>

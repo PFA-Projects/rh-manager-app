@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Deepartement" xml:space="preserve">
+    <value>Departements</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
-  <data name="NameOfStaffCategory" xml:space="preserve">
-    <value>Name of staff category</value>
+  <data name="name" xml:space="preserve">
+    <value>Departement Name</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Staff Categories</value>
+    <value>Departements</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Staff Category</value>
+    <value>Departement</value>
   </data>
 </root>

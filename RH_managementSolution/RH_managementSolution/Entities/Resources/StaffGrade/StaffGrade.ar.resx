@@ -120,6 +120,9 @@
   <data name="Description" xml:space="preserve">
     <value>شرح الرتبة</value>
   </data>
+  <data name="Grades" xml:space="preserve">
+    <value>الرتبات</value>
+  </data>
   <data name="NumberOfGrade" xml:space="preserve">
     <value>رقم الرتبة</value>
   </data>

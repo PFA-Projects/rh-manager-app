@@ -10,17 +10,18 @@ using System.Threading.Tasks;
 namespace RH_managementSolution.Entities
 {
     [GwinEntity(Localizable = true, DisplayMember = "Reference")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "LeaveManagement")]
     public class Leave : BaseEntity
     {
-        [EntryForm(Ordre = 2)]
+        [EntryForm(Ordre = 2,GroupeBox ="Leave",isRequired =true)]
         [DataGrid]
+        [Filter(isValeurFiltreVide = true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public LeaveAsk leaveAsk { get; set; }
-
-        [Filter]
-        [EntryForm (Ordre =1)]
+        
+        [EntryForm (Ordre =1, GroupeBox = "Leave",isRequired =true)]
         [DataGrid]
+        [Filter(isValeurFiltreVide = true)]
         [Relationship(Relation =RelationshipAttribute.Relations.ManyToOne)]
         public Staff staff { get; set; }
     }
