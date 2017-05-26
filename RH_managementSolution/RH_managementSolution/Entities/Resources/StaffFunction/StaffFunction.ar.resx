@@ -123,7 +123,7 @@
   <data name="Fonctions" xml:space="preserve">
     <value>الوظائف</value>
   </data>
-  <data name="NameOfStaffCategory" xml:space="preserve">
+  <data name="NameOfStaffFunction" xml:space="preserve">
     <value>اسم الوظيفة</value>
   </data>
   <data name="PluralName" xml:space="preserve">

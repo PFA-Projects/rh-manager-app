@@ -9,23 +9,23 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(DisplayMember = "NumberOfGrade", Localizable = true)]
+    [GwinEntity(DisplayMember = "Name", isMaleName =true,Localizable = true)]
     [Menu(Group = "Staff")]
     public class StaffGrade : BaseEntity
     {
         public StaffGrade()
         {
             this.Description = new LocalizedString();
-            this.NumberOfGrade = new LocalizedString();
+            this.Name = new LocalizedString();
         }
 
-        [EntryForm(GroupeBox ="Grades",isRequired =true)]
-        [DataGrid]
+        [EntryForm(GroupeBox ="Grades",isRequired =true, WidthControl =150)]
+        [DataGrid(WidthColonne =180)]
         [Filter]
-        public LocalizedString NumberOfGrade { get; set; }
+        public LocalizedString Name { get; set; }
 
-        [EntryForm(WidthControl = 500, MultiLine = true, NumberLine = 5, GroupeBox = "Grades")]
-        [DataGrid(WidthColonne = 500)]
+        [EntryForm(WidthControl = 250, MultiLine = true, NumberLine = 5, GroupeBox = "Grades")]
+        [DataGrid(WidthColonne = 250)]
         public LocalizedString Description { get; set; }
 
         //[EntryForm]

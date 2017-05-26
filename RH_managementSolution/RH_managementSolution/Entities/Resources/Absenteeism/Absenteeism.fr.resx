@@ -121,10 +121,10 @@
     <value>Autorisé</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Absentéismes</value>
+    <value>Autorisations d'absences</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Absentéisme</value>
+    <value>Autorisation d'absence</value>
   </data>
   <data name="Authorization" xml:space="preserve">
     <value>Autorisation</value>

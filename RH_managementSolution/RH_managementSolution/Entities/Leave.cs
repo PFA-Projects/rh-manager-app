@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true, DisplayMember = "Reference")]
+    [GwinEntity(Localizable = true, DisplayMember = "staff", isMaleName = true)]
     [Menu(Group = "LeaveManagement")]
     public class Leave : BaseEntity
     {

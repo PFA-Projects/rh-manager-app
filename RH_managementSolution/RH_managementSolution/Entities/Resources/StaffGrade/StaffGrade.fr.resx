@@ -123,8 +123,8 @@
   <data name="Grades" xml:space="preserve">
     <value>Grades</value>
   </data>
-  <data name="NumberOfGrade" xml:space="preserve">
-    <value>Numero du grade</value>
+  <data name="Name" xml:space="preserve">
+    <value>Nom du grade</value>
   </data>
   <data name="PluralName" xml:space="preserve">
     <value>Les grades</value>

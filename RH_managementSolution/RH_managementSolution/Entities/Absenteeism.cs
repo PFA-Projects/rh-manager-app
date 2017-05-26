@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(Localizable = true,DisplayMember ="authorized")]
+    [GwinEntity(Localizable = true,DisplayMember ="authorized", isMaleName = false)]
     [Menu(Group = "AbseenteismManagement")]
     public class Absenteeism:BaseEntity
     {

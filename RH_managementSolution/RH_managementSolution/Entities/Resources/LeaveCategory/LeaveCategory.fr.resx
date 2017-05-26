@@ -121,15 +121,15 @@
     <value>description</value>
   </data>
   <data name="LeaveCategory" xml:space="preserve">
-    <value>Catégorie du congé</value>
+    <value>Nature de congé</value>
   </data>
   <data name="NameOfLeaveCategory" xml:space="preserve">
-    <value>type du congé</value>
+    <value>Nature de congé</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>types de congé</value>
+    <value>Natures de congés</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>type de congé</value>
+    <value>Nature de congé</value>
   </data>
 </root>
