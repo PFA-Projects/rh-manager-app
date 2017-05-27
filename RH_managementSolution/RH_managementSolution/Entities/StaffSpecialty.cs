@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(DisplayMember = "NameOfSpecialty", Localizable = true)]
+    [GwinEntity(DisplayMember = "NameOfStaffSpecialty", Localizable = true, isMaleName = false)]
     [Menu(Group = "Staff")]
     public class StaffSpecialty : BaseEntity
     {
@@ -18,13 +18,13 @@ namespace RH_managementSolution.Entities
             this.Description = new LocalizedString();
             this.NameOfStaffSpecialty = new LocalizedString();
         }
-        [EntryForm(GroupeBox ="Specialty",isRequired =true)]
-        [DataGrid]
+        [EntryForm(GroupeBox ="Specialty",isRequired =true,WidthControl =150 )]
+        [DataGrid( WidthColonne = 180)]
         [Filter]
         public LocalizedString NameOfStaffSpecialty { get; set; }
 
-        [EntryForm(WidthControl = 500, MultiLine = true, NumberLine = 5, GroupeBox = "Specialty")]
-        [DataGrid(WidthColonne = 500)]
+        [EntryForm(WidthControl = 250, MultiLine = true, NumberLine = 5, GroupeBox = "Specialty")]
+        [DataGrid(WidthColonne = 250)]
         public LocalizedString Description { get; set; }
 
         //[EntryForm]

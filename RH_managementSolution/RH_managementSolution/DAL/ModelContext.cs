@@ -47,6 +47,7 @@
         public virtual DbSet<LeaveAsk> LeaveAsks { get; set; }
         public virtual DbSet<Departement> Departement { get; set; }
         public virtual DbSet<AdvancementGrade> AdvancementGrades { get; set; }
+        public virtual DbSet<GradeCategory> GradeCategories { get; set; }
 
 
         // Ajoutez un DbSet pour chaque type d'entité à inclure dans votre modèle. Pour plus d'informations 

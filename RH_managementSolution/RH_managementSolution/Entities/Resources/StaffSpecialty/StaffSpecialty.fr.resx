@@ -121,13 +121,13 @@
     <value>Description</value>
   </data>
   <data name="NameOfStaffSpecialty" xml:space="preserve">
-    <value>Name of specialty</value>
+    <value>Nom du specialité</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Specialties</value>
+    <value>Specialités</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Specialty</value>
+    <value>Spécialité</value>
   </data>
   <data name="Specialty" xml:space="preserve">
     <value>Spécialités</value>

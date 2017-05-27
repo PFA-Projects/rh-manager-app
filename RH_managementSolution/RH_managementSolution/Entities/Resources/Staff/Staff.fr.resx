@@ -145,13 +145,13 @@
     <value>Numero de telephone</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Personnel</value>
+    <value>Personnels</value>
   </data>
   <data name="RecruitementDate" xml:space="preserve">
     <value>date de recrutement</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Personnels</value>
+    <value>Personnel</value>
   </data>
   <data name="specialties" xml:space="preserve">
     <value>Spécialités</value>

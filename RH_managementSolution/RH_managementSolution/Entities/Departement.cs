@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(DisplayMember = "name", Localizable = true)]
+    [GwinEntity(DisplayMember = "name", Localizable = true, isMaleName = true)]
     [Menu(Group = "Staff")]
     public class Departement:BaseEntity
     {

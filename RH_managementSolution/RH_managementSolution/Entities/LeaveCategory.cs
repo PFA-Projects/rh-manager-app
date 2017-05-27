@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace RH_managementSolution.Entities
 {
-    [GwinEntity(DisplayMember = "NameOfLeaveCategory", Localizable = true)]
+    [GwinEntity(DisplayMember = "NameOfLeaveCategory", Localizable = true, isMaleName = false)]
     [Menu(Group = "LeaveManagement")]
-    public class LeaveCategory:BaseEntity
+    [ManagementForm(Width = 800)]
+    public class LeaveCategory : BaseEntity
     {
         public LeaveCategory()
         {
@@ -19,13 +20,18 @@ namespace RH_managementSolution.Entities
             this.NameOfLeaveCategory = new LocalizedString();
         }
 
-        [EntryForm(GroupeBox ="LeaveCategory",isRequired =true)]
-        [DataGrid]
+        [EntryForm(GroupeBox = "LeaveCategory", WidthControl = 200, isRequired = true)]
+        [DataGrid(WidthColonne = 150, Ordre = 1)]
         [Filter]
         public LocalizedString NameOfLeaveCategory { get; set; }
 
-        [EntryForm(MultiLine = true, NumberLine = 5,WidthControl =500, GroupeBox = "LeaveCategory")]
-        [DataGrid]
+        [EntryForm(MultiLine = true, NumberLine = 5, WidthControl = 250, GroupeBox = "LeaveCategory")]
+        [DataGrid(WidthColonne = 200, Ordre = 2)]
         public LocalizedString Description { get; set; }
+
+
+        [EntryForm(GroupeBox = "LeaveCategory", WidthControl = 100, isRequired = true)]
+        [DataGrid(WidthColonne = 150, Ordre = 3)]
+        public int nbDays { get; set; }
     }
 }

@@ -121,7 +121,7 @@
     <value>A</value>
   </data>
   <data name="leaveCategory" xml:space="preserve">
-    <value>Type de congé</value>
+    <value>Nature de congé</value>
   </data>
   <data name="PluralName" xml:space="preserve">
     <value>Demandes de congé</value>

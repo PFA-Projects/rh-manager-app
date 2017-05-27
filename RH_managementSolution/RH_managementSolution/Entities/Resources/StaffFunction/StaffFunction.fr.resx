@@ -123,13 +123,13 @@
   <data name="Fonctions" xml:space="preserve">
     <value>Fonctions</value>
   </data>
-  <data name="NameOfStaffCategory" xml:space="preserve">
-    <value> Fonction du personnel</value>
+  <data name="NameOfStaffFunction" xml:space="preserve">
+    <value>Fonction</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Fontions des personnels</value>
+    <value>Fontions</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Fontion du personel</value>
+    <value>Fontion </value>
   </data>
 </root>
